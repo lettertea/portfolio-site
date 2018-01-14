@@ -2,105 +2,365 @@
 <html>
 
 <head>
-	<title>Some Projects</title>
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+    <title>Some Projects</title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+    <!-- Loading necessary links and scripts -->
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="buttons.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 
-	<script type="text/javascript">
-	 $(document).ready(function() {
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
 
-			function initialization(){
-				$('#myContainer').fullpage({
-					sectionsColor: ['#ff8c1a', '#cccccc', '#4da6ff'],
-					anchors: ['Welcome', 'Projects', 'Contacts'],
-					resize: false,
-					animateAnchor:false,
-					scrollOverflow: true,
-					autoScrolling: true,
-					responsive: 900,
-					fitSection: false,
-					menu: '#menu',
-					slidesNavigation: true,
-					slidesNavPosition: 'bottom',
-					paddingTop: '20px',
-					css3: true,
-					lazyLoading: true,
-					scrollingSpeed: 450,
-					onLeave: function(index, nextIndex, direction){
-						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
-					},
-					afterLoad: function(anchorLink, index){
-						console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
-					},
-					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-						console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-					},
-					onSlideLeave: function(anchorLink, index, slideIndex, direction){
-						console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-					},
-					afterRender: function(){
-						console.log("afterRender");
-					},
-					afterResize: function(){
-						console.log("afterResize");
-					},
-				});
-			}
-			initialization();
-		});
-	</script>
- <style>
-      .myContent{
-        height: 160px;
-      }
+        <!-- Fullpage.js init settings -->
+        <script type="text/javascript">
+            $(document).ready(function() {
 
-
-    </style>
+                function initialization() {
+                    $('#myContainer').fullpage({
+                        sectionsColor: ['#ff8c1a', '#262626', '#4da6ff'],
+                        anchors: ['Welcome', 'Projects', 'Contacts'],
+                        resize: false,
+                        animateAnchor: false,
+                        scrollOverflow: true,
+                        autoScrolling: true,
+                        responsive: 900,
+                        fitSection: false,
+                        menu: '#menu',
+                        slidesNavigation: true,
+                        slidesNavPosition: 'bottom',
+                        paddingTop: '20px',
+                        css3: true,
+                        lazyLoading: true,
+                        scrollingSpeed: 450,
+                        onLeave: function(index, nextIndex, direction) {
+                            console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " + direction);
+                        },
+                        afterLoad: function(anchorLink, index) {
+                            console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index);
+                        },
+                        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+                            console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+                        },
+                        onSlideLeave: function(anchorLink, index, slideIndex, direction) {
+                            console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+                        },
+                        afterRender: function() {
+                            console.log("afterRender");
+                        },
+                        afterResize: function() {
+                            console.log("afterResize");
+                        },
+                    });
+                }
+                initialization();
+            });
+        </script>
 </head>
+
 <body>
+    <!-- Navigation Menu -->
+    <ul id="menu">
+        <li data-menuanchor="Welcome"><a href="#Welcome">Welcome</a></li>
+        <li data-menuanchor="Projects"><a href="#Projects">Projects</a></li>
+        <li data-menuanchor="Contacts"><a href="#Contacts">Contacts</a></li>
+    </ul>
 
-<ul id="menu">
-	<li data-menuanchor="Welcome"><a href="#Welcome">First slide</a></li>
-	<li data-menuanchor="Projects"><a href="#Projects">Second slide</a></li>
-	<li data-menuanchor="Contacts"><a href="#Contacts">Third slide</a></li>
-</ul>
-<div id="myContainer" >
+    <!-- Slides div -->
+    <div id="myContainer">
 
-	<div class="section" id="section0"><h1>Welcome! I'm Thomas.</h1><h4>If you scroll down (or use your arrow keys), you can see some of my projects.</h4></div>
-	<div class="section" id="section1">
-		<div class="slide">
-			<div class="wrap left"><h2 class="center">Runner Type Quiz</h2>
-			<h4 class="wrap left">
-				<a class="button-react" href="https://runner-quiz.surge.sh/" target="_blank"><i class="fas fa-external-link-alt"> </i> Live Demo</a>
+        <!-- First slide: Welcome -->
+        <div class="section" id="section0">
+            <h1>Welcome! I'm Thomas.</h1>
+            <h4>If you scroll down (or use your arrow keys), you can see some of my projects.</h4></div>
+        <!-- Second slide, React Project -->
+        <div class="section" id="section1">
+            <div class="slide">
+                <div>
+                    <!-- Button Links -->
+                    <section class="page-container" id="flip-3d">
+                        <section>
 
-				<a class="button-react green" href="https://github.com/nashkenazy/react-quiz" target="_blank"><i class="fab fa-github"> </i> Github</a></h4>
-			<img data-src="images/runner.png"><br />
-			<div class="wrap left">
-			<h4>Technologies used: React, HTML/CSS/JS</h4>
-			</div>
-		</div>
-		<div class="slide"><div><h1>Slide 2.1</h1></div></div>
-		<div class="slide"><h1>Slide 2.2</h1></div>
-		<div class="slide"><h1>Slide 2.3</h1></div>
-	</div>
-</div>
-	<div class="section fp-auto-height" id="section2">
-        <div class="myContent">
-          <h1>Section 3</h1>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://runner-quiz.surge.sh/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://github.com/nashkenazy/react-quiz" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+				<br />
+                    <img src="images/runner.png">
+                    <br />
+                    <h4 class="white-font">React and HTML/CSS/JS</h4>
+
+                <!-- Second slide, MEAN Blogs Project -->
+                <div class="slide">
+
+
+                    <!-- Button Links -->
+                    <section class="page-container" id="flip-3d">
+                        <section>
+
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://github.com/nashkenazy/MEAN-Blog" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+                    <br />
+<img data-src="images/mean.png">
+<br />
+<h4 class="white-font">Mongo, Express, Angular, Node, and HTML/CSS/JS</h4>
+                </div>
+                 <!-- Second slide, Password Checks Project -->
+                <div class="slide">
+                     <section class="page-container" id="flip-3d">
+
+                        <section>
+
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://passwordchecks.herokuapp.com/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+                    <br />
+<img data-src="images/password.png">
+<br />
+<h4 class="white-font">Node, Express, zxcvbn, and HTML/CSS/JS</h4>
+ <!-- Second slide, React Todo Projet -->
+                    </div>
+                    <div class="slide">
+                                             <section class="page-container" id="flip-3d">
+
+                        <section>
+
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://basic-react-todo.surge.sh/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://github.com/nashkenazy/React-Project-Manager" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+                    <br />
+<img data-src="images/todo.png">
+<br />
+<h4 class="white-font">React, HTML & CSS</h4></div>
+                </div>
+            </div>
+<!-- Second slide, Django RPS Project -->
+<div class="slide">
+                     <section class="page-container" id="flip-3d">
+
+                        <section>
+
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://passwordchecks.herokuapp.com/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+                    <br />
+<img data-src="images/rps.png">
+<br />
+<h4 class="white-font">Django and HTML & CSS</h4>
+
+                    </div>
+                    <div class="slide">
+                     <section class="page-container" id="flip-3d">
+
+                        <section>
+
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://passwordchecks.herokuapp.com/" target="_blank">
+                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    </a>
+                                    <div class="button button-3d back demo-blue">
+                                        Live Demo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                    </a>
+                                    <div class="button button-3d back github-green">
+                                        Github
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container button-flip3d-vertical2">
+                                <div class="flipper flipper-flip3d-vertical2">
+                                    <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    </a>
+                                    <div class="button button-3d back blog-red">
+                                        Blog Post
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+                    <br />
+<img data-src="images/portfolio.png">
+<br />
+<h4 class="white-font">Fullpage.js, HTML/CSS/JS</h4>
+
+                    </div>
         </div>
+
+
+
+
+
+
+<!-- Contact Page Slide -->
+        <div class="section fp-auto-height" id="section2">
+            <div class="myContent">
+                <h1>Section 3</h1>
+            </div>
+        </div>
+
     </div>
 
-</div>
-
 </body>
-</html>
 
+</html>
