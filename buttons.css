@@ -34,7 +34,7 @@
   color: white;
   font-size: 32px;
   margin: auto;
-  text-shadow: .5px 1px 2px #3c3c3c;
+  text-shadow: 3px 1px 4px #3c3c3c;
 }
 .button-container .button.front {
   z-index: 10;
@@ -62,8 +62,13 @@
   transform: rotateX(0deg);
 }
 
+
 .github-green {
   background-color: #6cc644;
+}
+
+.github-purple {
+  background-color: #6e5494;
 }
 
 .demo-blue {
@@ -72,4 +77,8 @@
 
 .blog-red {
   background-color: #ef767c;
+}
+
+.linkedin-blue {
+  background-color: #0077B5;
 }

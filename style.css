@@ -91,9 +91,25 @@ img {
 }
 
 .myContent {
-        height: 190px;
+        height: 1080px; /* 78px for vertical centered buttons */
 }
 
 .white-font {
     color: white;
+}
+
+input[type=text], select {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: .95rem;
+    padding: 8px;
+}
+
+@media (max-width: 460px) {
+input[type=text], select {
+    width: 100%;
+    margin-top: 0;
+  }
 }
