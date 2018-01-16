@@ -85,31 +85,174 @@ border-color: transparent #cc0066 transparent transparent;
 }
 
 
-img {
-   -webkit-border-radius: 1px;
-            border-radius: 1px;
-}
-
 .myContent {
-        height: 1080px; /* 78px for vertical centered buttons */
+        height: 410px; /* 78px for vertical centered buttons */
 }
 
 .white-font {
     color: white;
 }
 
-input[type=text], select {
-    width: 400px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    font-size: .95rem;
-    padding: 8px;
+.form-style-4{
+    width: 0px;
+    font-size: 22px;
+
 }
 
-@media (max-width: 460px) {
-input[type=text], select {
-    width: 100%;
-    margin-top: 0;
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea
+{
+        color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 480px;
+    outline: none;
+
+}
+.form-style-4 textarea{
+    overflow: hidden;
+    resize:none;
+}
+
+.form-style-4 input:focus,
+.form-style-4 textarea:focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit]{
+    background: #576E86;
+    border: none;
+    border-radius: 5px;
+    color: #A8BACE;
+  cursor: pointer;
+  letter-spacing: 2px;
+  height: 45px;
+  width: 275px;
+
+}
+.form-style-4 input[type=submit]:hover{
+background: #394D61;
+color: #f2f2f2;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+}
+
+
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 40px;
+    max-height: 80px;
+}
+
+
+img {
+    box-shadow: 12px 6px 4px 3px;
+  -webkit-box-shadow: 12px 6px 4px 3px;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.88);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.wrap:hover .overlay {
+  height: 540px;
+}
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ color: #e88c30;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: .75em 1.5em;
+  font-size: 20px;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse .7s;
+  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #e8306e;
   }
+}
+
+
+button:hover, button:focus {
+  border-color: #e8306e;
+  color: white;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
