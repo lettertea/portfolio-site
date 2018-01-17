@@ -74,8 +74,13 @@
 
         <!-- First slide: Welcome -->
         <div class="section" id="section0">
-            <h1>Welcome! I'm Thomas.</h1>
-            <h4>If you scroll down (or use your arrow keys), you can see some of my projects.</h4></div>
+            <div class="container">
+
+        <h1 id="welcomeHeader" class="animate-header six"></h1>
+<br />
+        <h2 id="welcomeSubheader" class="animate-subheader three"></h2>
+        </div>
+</div>
         <!-- Second slide, React Project -->
         <div class="section" id="section1">
             <div class="slide">
@@ -426,11 +431,51 @@
         </div>
     </div>
     <script type="text/javascript">
+
+
+// Welcome Header Text for animation
+
+const headerArray = "Welcome! My name is Thomas Le.".split("");
+let headerText = '';
+
+for (let i = 0; i < headerArray.length; i++) {
+    if ( headerArray[i] === ' ' ){
+        headerText += '&nbsp';
+    }
+    else {
+    headerText += '<span>'+ headerArray[i] +'</span>';
+}
+}
+
+
+document.getElementById("welcomeHeader").innerHTML = headerText
+
+// Welcome Subheader Text for animation
+
+const subheaderArray = "Down below are my projects.".split("");
+let subheaderText = '';
+
+for (let i = 0; i < subheaderArray.length; i++) {
+    if ( subheaderArray[i] === ' ' ){
+        subheaderText += '&nbsp';
+    }
+    else {
+    subheaderText += '<span>'+ subheaderArray[i] +'</span>';
+}
+}
+
+document.getElementById("welcomeSubheader").innerHTML = subheaderText
+
+
+
 //auto expand textarea
 function adjust_textarea(h) {
     h.style.height = "20px";
     h.style.height = (h.scrollHeight)+"px";
 }
+
+
+
 </script>
 </body>
 
