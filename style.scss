@@ -217,8 +217,7 @@ img {
 }
 button {
     position: relative;
-    top: 50%;
-
+    top: 45%;
     transform: translateY(-50%);
     color: $color_fire_bush_approx;
     transition: 0.25s;
@@ -229,27 +228,14 @@ button {
     margin: 0.5em;
     padding: .75em 1.5em;
     font-size: 20px;
-    &:hover {
+    &:hover, &:focus {
         border-color: $color_cerise_red_approx;
-        color: $white;
+        color: $color_cerise_red_approx;
     }
-    &:focus {
-        border-color: $color_cerise_red_approx;
-        color: $white;
-    }
+
 }
 
-.pulse:hover,
-.pulse:focus {
-  animation: pulse .7s;
-  @include box-shadow(0, 0, 0, 1em, rgba(255, 255, 255, 0));
-}
 
-@keyframes pulse {
-  0% {
-    @include box-shadow(0,0,0,0,#e8306e);
-  }
-}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -263,13 +249,11 @@ button {
 .fp-controlArrow.fp-prev:hover {
     border-color: transparent $color_razzmatazz_approx transparent transparent;
 }
-input:-webkit-autofill {
-    &:hover {
-    }
-    &:focus {
-    }
-    &:active {
-    }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
 }
 
 .animate-header, .animate-subheader{
@@ -278,13 +262,13 @@ input:-webkit-autofill {
 }
 }
 
- @for $i from 1 through 31 {
+ @for $i from 1 through 25 {
     .animate-header span:nth-of-type(#{$i}) {
         animation-delay: (($i - 1)) *.03s;
     }
   }
 
-   @for $i from 1 through 27 {
+   @for $i from 1 through 35 {
     .animate-subheader span:nth-of-type(#{$i}) {
         animation-delay: 1 + (($i - 1)) *.015s;
     }
@@ -312,7 +296,7 @@ input:-webkit-autofill {
 
     99% {
         transform: translate(0) scale(1.2);
-        color: #00f0ff;
+        color: white;
     }
 
     100% {
