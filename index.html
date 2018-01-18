@@ -24,7 +24,7 @@
                         paddingTop: '20px',
                         css3: true,
                         lazyLoading: false,
-                        scrollingSpeed: 400,
+                        scrollingSpeed: 550,
                         onLeave: function(index, nextIndex, direction) {
                             console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " + direction);
                         },
@@ -80,6 +80,8 @@
 <br />
         <h2 id="welcomeSubheader" class="animate-subheader three"></h2>
         </div>
+        <a class="arrow-down" href="#Projects"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+
 </div>
         <!-- Second slide, React Project -->
         <div class="section" id="section1">
@@ -122,7 +124,7 @@
 
                         </section>
                     </section>
-                    <br />
+<br />
 
                     <div class="wrap">
   <img src="images/runner.png">
@@ -435,36 +437,36 @@
 
 // Welcome Header Text for animation
 
-const headerArray = "Welcome! My name is Thomas Le.".split("");
-let headerText = '';
+const headerText = "Welcome to a random person's site!";
+let headerSpanned = '';
 
-for (let i = 0; i < headerArray.length; i++) {
-    if ( headerArray[i] === ' ' ){
-        headerText += '&nbsp';
+for (let i = 0; i < headerText.length; i++) {
+    if ( headerText[i] === ' ' ){
+        headerSpanned += '&nbsp';
     }
     else {
-    headerText += '<span>'+ headerArray[i] +'</span>';
+    headerSpanned += '<span>'+ headerText[i] +'</span>';
 }
 }
 
 
-document.getElementById("welcomeHeader").innerHTML = headerText
+document.getElementById("welcomeHeader").innerHTML = headerSpanned
 
-// Welcome Subheader Text for animation
+// 'Welcome' Subheader Spanned for animation
 
-const subheaderArray = "You can see some of my projects down below.".split("");
-let subheaderText = '';
+const subheaderText = "You can see more of them down below.";
+let subheaderSpanned = '';
 
-for (let i = 0; i < subheaderArray.length; i++) {
-    if ( subheaderArray[i] === ' ' ){
-        subheaderText += '&nbsp';
+for (let i = 0; i < subheaderText.length; i++) {
+    if ( subheaderText[i] === ' ' ){
+        subheaderSpanned += '&nbsp';
     }
     else {
-    subheaderText += '<span>'+ subheaderArray[i] +'</span>';
+    subheaderSpanned += '<span>'+ subheaderText[i] +'</span>';
 }
 }
 
-document.getElementById("welcomeSubheader").innerHTML = subheaderText
+document.getElementById("welcomeSubheader").innerHTML = subheaderSpanned
 
 
 

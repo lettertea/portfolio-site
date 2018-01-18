@@ -60,7 +60,7 @@ $color_corn_harvest_approx: #8d6a00;
 
 h1 {
     @extend %extend_1;
-    font-size: 6em;
+    font-size: 5.5em;
 }
 h2 {
     @extend %extend_1;
@@ -220,7 +220,7 @@ button {
     top: 45%;
     transform: translateY(-50%);
     color: $color_fire_bush_approx;
-    transition: 0.25s;
+    transition: .75s;
     background: none;
     border: 2px solid;
     font: inherit;
@@ -262,15 +262,15 @@ input:-webkit-autofill:active {
 }
 }
 
- @for $i from 1 through 25 {
+ @for $i from 1 through 29 {
     .animate-header span:nth-of-type(#{$i}) {
         animation-delay: (($i - 1)) *.03s;
     }
   }
 
-   @for $i from 1 through 35 {
+   @for $i from 1 through 29 {
     .animate-subheader span:nth-of-type(#{$i}) {
-        animation-delay: 1 + (($i - 1)) *.015s;
+        animation-delay: 1.25 + (($i - 1)) *.015s;
     }
   }
 
@@ -321,6 +321,33 @@ input:-webkit-autofill:active {
         transform: rotate(0deg) translate(0);
         opacity: 1;
     }
+}
+
+@keyframes appear {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.arrow-down {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    right: 50;
+    margin-left: -60px;
+    font-size: 160px;
+    color: $color_fire_bush_approx;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: .75s;
+    animation: appear 1.5s forwards;
+    animation-delay: 2.3s;
+    &:hover {
+        color: $color_cerise_red_approx;
+    }
+
 }
 
 
