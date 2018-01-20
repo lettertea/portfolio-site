@@ -60,7 +60,7 @@ $color_corn_harvest_approx: #8d6a00;
 
 h1 {
     @extend %extend_1;
-    font-size: 5.5em;
+    font-size: 6.4em;
 }
 h2 {
     @extend %extend_1;
@@ -262,15 +262,15 @@ input:-webkit-autofill:active {
 }
 }
 
- @for $i from 1 through 29 {
+ @for $i from 1 through 8 {
     .animate-header span:nth-of-type(#{$i}) {
         animation-delay: (($i - 1)) *.03s;
     }
   }
 
-   @for $i from 1 through 29 {
+   @for $i from 1 through 26 {
     .animate-subheader span:nth-of-type(#{$i}) {
-        animation-delay: 1.25 + (($i - 1)) *.015s;
+        animation-delay: .9 + (($i - 1)) *.015s;
     }
   }
 
@@ -336,18 +336,17 @@ input:-webkit-autofill:active {
     bottom: 8%;
     left: 50%;
     right: 50;
-    margin-left: -60px;
+    margin-left: -80px;
     font-size: 160px;
     color: $color_fire_bush_approx;
     opacity: 0;
     transform: translateY(-40px);
     transition: .75s;
     animation: appear 1.5s forwards;
-    animation-delay: 2.3s;
+    animation-delay: 1.7s;
     &:hover {
         color: $color_cerise_red_approx;
     }
 
 }
-
 
