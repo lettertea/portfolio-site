@@ -147,7 +147,7 @@ p {
 .white-font {
     color: $white;
 }
-.form-style-4 {
+.contact-form {
     width: 100%;
     font-size: 16px;
     margin: auto;
@@ -235,7 +235,6 @@ button {
 
 }
 
-
 .cursor-pointer {
     cursor: pointer;
 }
@@ -268,15 +267,13 @@ input:-webkit-autofill:active {
     }
   }
 
-   @for $i from 1 through 26 {
+   @for $i from 1 through 28 {
     .animate-subheader span:nth-of-type(#{$i}) {
         animation-delay: .9 + (($i - 1)) *.015s;
     }
   }
 
-
-
-.three span {
+.text-slide span {
     color: $black_50;
     opacity: 0;
     transform: translate(-300px, 0) scale(0);
@@ -306,12 +303,11 @@ input:-webkit-autofill:active {
     }
 }
 
-.six span {
+.text-roll span {
     opacity: 0;
     transform: rotate(-180deg) translate(100px, 100px);
     animation: twister .5s forwards;
 }
-
 
 @keyframes twister {
     10% {
@@ -330,7 +326,6 @@ input:-webkit-autofill:active {
     }
 }
 
-
 .arrow-down {
     position: absolute;
     bottom: 8%;
@@ -343,10 +338,9 @@ input:-webkit-autofill:active {
     transform: translateY(-40px);
     transition: .75s;
     animation: appear 1.5s forwards;
-    animation-delay: 1.7s;
+    animation-delay: 1.75s;
     &:hover {
         color: $color_cerise_red_approx;
     }
 
 }
-

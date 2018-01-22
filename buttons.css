@@ -1,84 +1,92 @@
 .button-container {
-  text-align: center;
-  display: inline-block;
-  margin: 0px 10px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  height: 45px;
-  width: 160px;
-  -webkit-perspective: 1000;
-  -ms-perspective: 1000;
-  perspective: 1000;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    height: 45px;
+    width: 160px;
+    -webkit-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
 }
+
 .button-container .flipper {
-  transition: all .25s ease-in-out;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
+    transition: all .25s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
 }
+
 .button-container .button {
-  height: 45px;
-  width: 160px;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-shadow: 1px 1px 2px #3c3c3c;
-  -webkit-box-shadow: 2px 1px 4px -1px rgba(60, 60, 60, 0.64);
-  box-shadow: 2px 1px 4px -1px rgba(60, 60, 60, 0.64);
+    height: 45px;
+    width: 160px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 1px 1px 2px #3c3c3c;
+    -webkit-box-shadow: 2px 1px 4px -1px rgba(60, 60, 60, 0.64);
+    box-shadow: 2px 1px 4px -1px rgba(60, 60, 60, 0.64);
 }
+
 .button-container .button i.fa {
-  color: white;
-  font-size: 32px;
-  margin: auto;
+    color: white;
+    font-size: 32px;
+    margin: auto;
 }
+
 .button-container .button.front {
-  z-index: 10;
+    z-index: 10;
 }
+
 .button-container .button.back {
-  color: white;
-  font-size: 18px;
+    color: white;
+    font-size: 18px;
 }
 
-.button-flip3d-vertical2 .flipper-flip3d-vertical2 {
-  transform-origin: 100% 22.5px;
-}
-.button-flip3d-vertical2 .front {
-  transform: translateZ(22.5px);
-}
-.button-flip3d-vertical2 .back {
-  -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-  -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-  transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-}
-.button-flip3d-vertical2 .flipper-flip3d-vertical2 {
-  transform: rotateX(73deg);
-}
-.button-flip3d-vertical2:hover .flipper-flip3d-vertical2 {
-  transform: rotateX(0deg);
+.button-flip3d-vertical .flipper-flip3d-vertical {
+    transform-origin: 100% 22.5px;
 }
 
+.button-flip3d-vertical .front {
+    transform: translateZ(22.5px);
+}
+
+.button-flip3d-vertical .back {
+    -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+}
+
+.button-flip3d-vertical .flipper-flip3d-vertical {
+    transform: rotateX(73deg);
+}
+
+.button-flip3d-vertical:hover .flipper-flip3d-vertical {
+    transform: rotateX(0deg);
+}
 
 .github-green {
-  background-color: #6cc644;
+    background-color: #6cc644;
 }
 
 .github-purple {
-  background-color: #6e5494;
+    background-color: #6e5494;
 }
 
 .demo-blue {
-  background-color: #00b3b3;
+    background-color: #00b3b3;
 }
 
 .blog-red {
-  background-color: #ef767c;
+    background-color: #ef767c;
 }
 
 .linkedin-blue {
-  background-color: #0077B5;
+    background-color: #0077B5;
 }
