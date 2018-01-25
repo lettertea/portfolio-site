@@ -1,7 +1,7 @@
 # Portfolio-Site
 Live demo [here](https://nashkenazy.github.io/portfolio-site/).
 
-A static website that includes fullpage.js and some css animations. It presents each of my projects and lists the technologies used and the estimated creation date. Each project also has buttons that links to the related Github repository, blog post, and live demo if available.
+A static website that displays personal projects, descriptions, and related links with [fullpage.js](https://github.com/alvarotrigo/fullPage.js) and CSS.
 # Installation
 - Clone the Repository
 ```
