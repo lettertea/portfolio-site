@@ -1,7 +1,7 @@
 # Portfolio-Site
 Live demo [here](https://nashkenazy.github.io/portfolio-site/).
 
-A static website that displays personal projects, descriptions, and related links with [fullpage.js](https://github.com/alvarotrigo/fullPage.js) and CSS.
+A static website that displays personal projects, descriptions, and related links with [fullPage.js](https://github.com/alvarotrigo/fullPage.js) and CSS.
 # Installation
 - Clone the Repository
 ```
