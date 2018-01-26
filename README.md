@@ -1,5 +1,5 @@
 # Portfolio-Site
-Live demo [here](https://nashkenazy.github.io/portfolio-site/).
+Live demo [here](https://thomas-le.surge.sh/).
 
 A static website that displays personal projects, descriptions, and related links with [fullPage.js](https://github.com/alvarotrigo/fullPage.js) and CSS.
 # Installation
