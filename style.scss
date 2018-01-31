@@ -88,9 +88,16 @@ body {
     width: 960px;
     position: relative;
     &:hover .overlay {
-        height: 540px;
+        height: 100%;
     }
 }
+// 1371px for smooth transition from 960px to 70% width
+@media only screen and (max-width: 1371px ){
+    .wrap {
+        width: 70%;
+    }
+}
+
 p {
     font-size: 1em;
 }
