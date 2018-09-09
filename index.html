@@ -8,7 +8,7 @@
 
     <!-- Fullpage.js init settings -->
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             function initialization() {
                 $('#myContainer').fullpage({
@@ -26,22 +26,22 @@
                     css3: true,
                     lazyLoading: false,
                     scrollingSpeed: 400,
-                    onLeave: function(index, nextIndex, direction) {
+                    onLeave: function (index, nextIndex, direction) {
                         console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " + direction);
                     },
-                    afterLoad: function(anchorLink, index) {
+                    afterLoad: function (anchorLink, index) {
                         console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index);
                     },
-                    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+                    afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
                         console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
                     },
-                    onSlideLeave: function(anchorLink, index, slideIndex, direction) {
+                    onSlideLeave: function (anchorLink, index, slideIndex, direction) {
                         console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
                     },
-                    afterRender: function() {
+                    afterRender: function () {
                         console.log("afterRender");
                     },
-                    afterResize: function() {
+                    afterResize: function () {
                         console.log("afterResize");
                     },
                 });
@@ -57,7 +57,8 @@
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="buttons.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous" />
 
 
 
@@ -85,67 +86,65 @@
             <a class="arrow-down" href="#Projects"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
 
         </div>
-        <!-- Second slide, React Project -->
         <div class="section" id="section1">
+            <!-- Second slide, RVN -->
             <div class="slide">
-                <div>
-                    <!-- Button Links -->
-                    <section id="flip-3d">
-                        <section>
 
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://runner-quiz.surge.sh/" target="_blank">
-                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
-                                    </a>
-                                    <div class="button button-3d back demo-blue">
-                                        Live Demo
-                                    </div>
+                <!-- Button Links -->
+                <section id="flip-3d">
+                    <section>
+
+                        <div class="button-container button-flip3d-vertical">
+                            <div class="flipper flipper-flip3d-vertical">
+                                <a href="https://rvn.netlify.com" target="_blank">
+                                    <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                </a>
+                                <div class="button button-3d back demo-blue">
+                                    Live Demo
                                 </div>
                             </div>
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://github.com/nashkenazy/react-quiz" target="_blank">
-                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                    </a>
-                                    <div class="button button-3d back github-green">
-                                        Github
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://some-coding-blog.herokuapp.com/blog/react-runners-quiz-reflection/" target="_blank">
-                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
-                                    </a>
-                                    <div class="button button-3d back blog-red">
-                                        Blog Post
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                    </section>
-                    <br />
-
-                    <div class="wrap">
-                        <img src="images/runner.png">
-                        <div class="overlay">
-                            <button>React and HTML/CSS/JSX</button>
-                            <button>Late December 2017</button>
                         </div>
+                        <div class="button-container button-flip3d-vertical">
+                            <div class="flipper flipper-flip3d-vertical">
+                                <a href="https://github.com/nashkenazy/React-Visual-Novel" target="_blank">
+                                    <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                </a>
+                                <div class="button button-3d back github-green">
+                                    Github
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container button-flip3d-vertical">
+                            <div class="flipper flipper-flip3d-vertical">
+                                <a href="https://some-coding-blog.herokuapp.com/blog/mean-blogs-reflections/" target="_blank">
+                                    <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                </a>
+                                <div class="button button-3d back blog-red">
+                                    Blog Post
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
+                <br />
+                <div class="wrap">
+                    <img src="images/rvn.png">
+                    <div class="overlay">
+                        <button>Create React App</button>
+                        <button>October 2017</button>
                     </div>
-
-                    <!-- Second slide, MEAN Blogs Project -->
-                    <div class="slide">
-
+                </div>
+                <!-- Second slide, React Project -->
+                <div class="slide">
+                    <div>
                         <!-- Button Links -->
                         <section id="flip-3d">
                             <section>
 
                                 <div class="button-container button-flip3d-vertical">
                                     <div class="flipper flipper-flip3d-vertical">
-                                        <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                        <a href="https://runner-quiz.surge.sh/" target="_blank">
                                             <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
                                         </a>
                                         <div class="button button-3d back demo-blue">
@@ -155,7 +154,7 @@
                                 </div>
                                 <div class="button-container button-flip3d-vertical">
                                     <div class="flipper flipper-flip3d-vertical">
-                                        <a href="https://github.com/nashkenazy/MEAN-Blog" target="_blank">
+                                        <a href="https://github.com/nashkenazy/react-quiz" target="_blank">
                                             <div class="button front big github-green"><i class="fa fa-github"></i></div>
                                         </a>
                                         <div class="button button-3d back github-green">
@@ -165,7 +164,256 @@
                                 </div>
                                 <div class="button-container button-flip3d-vertical">
                                     <div class="flipper flipper-flip3d-vertical">
-                                        <a href="https://some-coding-blog.herokuapp.com/blog/mean-blogs-reflections/" target="_blank">
+                                        <a href="https://some-coding-blog.herokuapp.com/blog/react-runners-quiz-reflection/"
+                                            target="_blank">
+                                            <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                        </a>
+                                        <div class="button button-3d back blog-red">
+                                            Blog Post
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </section>
+                        <br />
+
+                        <div class="wrap">
+                            <img src="images/runner.png">
+                            <div class="overlay">
+                                <button>React and HTML/CSS/JSX</button>
+                                <button>Late December 2017</button>
+                            </div>
+                        </div>
+                        <!-- Second slide, MEAN Blogs Project -->
+                        <div class="slide">
+
+                            <!-- Button Links -->
+                            <section id="flip-3d">
+                                <section>
+
+                                    <div class="button-container button-flip3d-vertical">
+                                        <div class="flipper flipper-flip3d-vertical">
+                                            <a href="https://mean-blogs.herokuapp.com/" target="_blank">
+                                                <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                            </a>
+                                            <div class="button button-3d back demo-blue">
+                                                Live Demo
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-container button-flip3d-vertical">
+                                        <div class="flipper flipper-flip3d-vertical">
+                                            <a href="https://github.com/nashkenazy/MEAN-Blog" target="_blank">
+                                                <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                            </a>
+                                            <div class="button button-3d back github-green">
+                                                Github
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-container button-flip3d-vertical">
+                                        <div class="flipper flipper-flip3d-vertical">
+                                            <a href="https://some-coding-blog.herokuapp.com/blog/mean-blogs-reflections/"
+                                                target="_blank">
+                                                <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                            </a>
+                                            <div class="button button-3d back blog-red">
+                                                Blog Post
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </section>
+                            <br />
+                            <div class="wrap">
+                                <img src="images/mean.png">
+                                <div class="overlay">
+                                    <button>Mongo, Express, Angular, Node, Bootswatch, and HTML</button>
+                                    <button>October 2017</button>
+                                </div>
+                            </div>
+                            <!-- Second slide, Django RPS Project -->
+                            <div class="slide">
+                                <section id="flip-3d">
+                                    <section>
+
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://django-rps.herokuapp.com/" target="_blank">
+                                                    <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                                </a>
+                                                <div class="button button-3d back demo-blue">
+                                                    Live Demo
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://github.com/nashkenazy/Django-RPS" target="_blank">
+                                                    <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                                </a>
+                                                <div class="button button-3d back github-green">
+                                                    Github
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://some-coding-blog.herokuapp.com/blog/django-rps-reflection/"
+                                                    target="_blank">
+                                                    <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                                </a>
+                                                <div class="button button-3d back blog-red">
+                                                    Blog Post
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                </section>
+                                <br />
+                                <div class="wrap">
+                                    <img src="images/rps.png">
+                                    <div class="overlay">
+                                        <button>Django, W3.CSS, and HTML & CSS</button>
+                                        <button>Early September 2017</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Second slide, Password Checks Project -->
+                            <div class="slide">
+                                <section id="flip-3d">
+                                    <section>
+
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://passwordchecks.herokuapp.com/" target="_blank">
+                                                    <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                                </a>
+                                                <div class="button button-3d back demo-blue">
+                                                    Live Demo
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://github.com/nashkenazy/Password-Strength-Checker"
+                                                    target="_blank">
+                                                    <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                                </a>
+                                                <div class="button button-3d back github-green">
+                                                    Github
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://some-coding-blog.herokuapp.com/blog/password-checks-reflection/"
+                                                    target="_blank">
+                                                    <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                                </a>
+                                                <div class="button button-3d back blog-red">
+                                                    Blog Post
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                </section>
+                                <br />
+                                <div class="wrap">
+                                    <img src="images/password.png">
+                                    <div class="overlay">
+                                        <button>Node, Express, Bootswatch, Passport.js, and zxcvbn</button>
+                                        <button>Late September 2017</button>
+                                    </div>
+                                </div>
+
+                                <!-- Second slide, React Todo Projet -->
+                            </div>
+                            <div class="slide">
+                                <section id="flip-3d">
+                                    <section>
+
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://basic-react-todo.surge.sh/" target="_blank">
+                                                    <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                                </a>
+                                                <div class="button button-3d back demo-blue">
+                                                    Live Demo
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://github.com/nashkenazy/React-Project-Manager" target="_blank">
+                                                    <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                                </a>
+                                                <div class="button button-3d back github-green">
+                                                    Github
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container button-flip3d-vertical">
+                                            <div class="flipper flipper-flip3d-vertical">
+                                                <a href="https://some-coding-blog.herokuapp.com/blog/react-todo-app-reflection/"
+                                                    target="_blank">
+                                                    <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                                </a>
+                                                <div class="button button-3d back blog-red">
+                                                    Blog Post
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                </section>
+                                <br />
+                                <div class="wrap">
+                                    <img src="images/todo.png">
+                                    <div class="overlay">
+                                        <button>React and HTML/CSS/JSX</button>
+                                        <button>Early December 2017</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second slide, Some Blog Project -->
+                    <div class="slide">
+                        <section id="flip-3d">
+
+                            <section>
+
+                                <div class="button-container button-flip3d-vertical">
+                                    <div class="flipper flipper-flip3d-vertical">
+                                        <a href="https://some-coding-blog.herokuapp.com/" target="_blank">
+                                            <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                        </a>
+                                        <div class="button button-3d back demo-blue">
+                                            Live Demo
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container button-flip3d-vertical">
+                                    <div class="flipper flipper-flip3d-vertical">
+                                        <a href="https://github.com/nashkenazy/Some-Django-Blog" target="_blank">
+                                            <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                        </a>
+                                        <div class="button button-3d back github-green">
+                                            Github
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container button-flip3d-vertical">
+                                    <div class="flipper flipper-flip3d-vertical">
+                                        <a href="https://some-coding-blog.herokuapp.com/blog/some-coding-blog-reflections/"
+                                            target="_blank">
                                             <div class="button front big blog-red"><i class="fa fa-book"></i></div>
                                         </a>
                                         <div class="button button-3d back blog-red">
@@ -178,20 +426,23 @@
                         </section>
                         <br />
                         <div class="wrap">
-                            <img src="images/mean.png">
+                            <img src="images/blog.png">
                             <div class="overlay">
-                                <button>Mongo, Express, Angular, Node, Bootswatch, and HTML</button>
-                                <button>October 2017</button>
+                                <button>Fullpage.js and HTML/CSS/JS</button>
+                                <button>Early January 2018</button>
                             </div>
                         </div>
-                        <!-- Second slide, Django RPS Project -->
-                        <div class="slide">
-                            <section id="flip-3d">
-                                <section>
+
+                    </div>
+                    <!-- Second slide, Portfolio Site Project -->
+                    <div class="slide">
+                        <section id="flip-3d">
+
+                            <section>
 
                                 <div class="button-container button-flip3d-vertical">
                                     <div class="flipper flipper-flip3d-vertical">
-                                        <a href="https://django-rps.herokuapp.com/" target="_blank">
+                                        <a href="https://thomas-le.surge.sh/" target="_blank">
                                             <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
                                         </a>
                                         <div class="button button-3d back demo-blue">
@@ -199,323 +450,129 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://github.com/nashkenazy/Django-RPS" target="_blank">
-                                                <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                            </a>
-                                            <div class="button button-3d back github-green">
-                                                Github
-                                            </div>
+                                <div class="button-container button-flip3d-vertical">
+                                    <div class="flipper flipper-flip3d-vertical">
+                                        <a href="https://github.com/nashkenazy/portfolio-site" target="_blank">
+                                            <div class="button front big github-green"><i class="fa fa-github"></i></div>
+                                        </a>
+                                        <div class="button button-3d back github-green">
+                                            Github
                                         </div>
                                     </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://some-coding-blog.herokuapp.com/blog/django-rps-reflection/" target="_blank">
-                                                <div class="button front big blog-red"><i class="fa fa-book"></i></div>
-                                            </a>
-                                            <div class="button button-3d back blog-red">
-                                                Blog Post
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </section>
-                            </section>
-                            <br />
-                            <div class="wrap">
-                                <img src="images/rps.png">
-                                <div class="overlay">
-                                    <button>Django, W3.CSS, and HTML & CSS</button>
-                                    <button>Early September 2017</button>
                                 </div>
-                            </div>
-
-                        </div>
-                        <!-- Second slide, Password Checks Project -->
-                        <div class="slide">
-                            <section id="flip-3d">
-                                <section>
-
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://passwordchecks.herokuapp.com/" target="_blank">
-                                                <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
-                                            </a>
-                                            <div class="button button-3d back demo-blue">
-                                                Live Demo
-                                            </div>
+                                <div class="button-container button-flip3d-vertical">
+                                    <div class="flipper flipper-flip3d-vertical">
+                                        <a href="https://some-coding-blog.herokuapp.com/blog/portfolio-site-reflection/"
+                                            target="_blank">
+                                            <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                        </a>
+                                        <div class="button button-3d back blog-red">
+                                            Blog Post
                                         </div>
                                     </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://github.com/nashkenazy/Password-Strength-Checker" target="_blank">
-                                                <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                            </a>
-                                            <div class="button button-3d back github-green">
-                                                Github
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://some-coding-blog.herokuapp.com/blog/password-checks-reflection/" target="_blank">
-                                                <div class="button front big blog-red"><i class="fa fa-book"></i></div>
-                                            </a>
-                                            <div class="button button-3d back blog-red">
-                                                Blog Post
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </section>
-                            </section>
-                            <br />
-                            <div class="wrap">
-                                <img src="images/password.png">
-                                <div class="overlay">
-                                    <button>Node, Express, Bootswatch, Passport.js, and zxcvbn</button>
-                                    <button>Late September 2017</button>
                                 </div>
-                            </div>
 
-                            <!-- Second slide, React Todo Projet -->
-                        </div>
-                        <div class="slide">
-                            <section id="flip-3d">
-                                <section>
-
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://basic-react-todo.surge.sh/" target="_blank">
-                                                <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
-                                            </a>
-                                            <div class="button button-3d back demo-blue">
-                                                Live Demo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://github.com/nashkenazy/React-Project-Manager" target="_blank">
-                                                <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                            </a>
-                                            <div class="button button-3d back github-green">
-                                                Github
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="button-container button-flip3d-vertical">
-                                        <div class="flipper flipper-flip3d-vertical">
-                                            <a href="https://some-coding-blog.herokuapp.com/blog/react-todo-app-reflection/" target="_blank">
-                                                <div class="button front big blog-red"><i class="fa fa-book"></i></div>
-                                            </a>
-                                            <div class="button button-3d back blog-red">
-                                                Blog Post
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </section>
                             </section>
-                            <br />
-                            <div class="wrap">
-                                <img src="images/todo.png">
-                                <div class="overlay">
-                                    <button>React and HTML/CSS/JSX</button>
-                                    <button>Early December 2017</button>
-                                </div>
+                        </section>
+                        <br />
+                        <div class="wrap">
+                            <img src="images/portfolio.png">
+                            <div class="overlay">
+                                <button>Fullpage.js and HTML/CSS/JS</button>
+                                <button>Early January 2018</button>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
+            </div>
+            <!-- Contact Page Slide -->
+            <div class="section fp-auto-height" id="section2">
+                <div class="myContent wrap">
+                    <h2 class="white-font">Contacts</h2>
 
-                <!-- Second slide, Some Blog Project -->
-                <div class="slide">
+                    <form class="contact-form" method="POST" action="https://formspree.io/le.thomas.vu@gmail.com">
+                        <input type="text" name="name" required="true" placeholder="Name" />
+
+                        <input type="email" name="_replyto" required="true" placeholder="Email" />
+
+                        <input type="text" name="subject" required="true" placeholder="Subject" />
+                        <textarea name="message" onkeyup="adjust_textarea(this)" required="true" placeholder="Message"></textarea>
+                        <input class="cursor-pointer" type="submit" value="Send" />
+                        <input type="hidden" name="_next" value="https://thanks-redirect.surge.sh/" />
+                    </form>
+                    <p class="white-font">Or contact
+                        <a class="white-font" href="mailto:le.thomas.vu@gmail.com?Subject=From%20portfolio-site: "
+                            target="_top">le.thomas.vu@gmail.com</a>
+                    </p>
                     <section id="flip-3d">
-
                         <section>
 
-                            <div class="button-container button-flip3d-vertical">
+                            <div class="button-container button-flip3d-vertical contacts-margin">
                                 <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://some-coding-blog.herokuapp.com/" target="_blank">
-                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
+                                    <a href="https://github.com/nashkenazy" target="_blank">
+                                        <div class="button front big github-purple"><i class="fa fa-github"></i></div>
                                     </a>
-                                    <div class="button button-3d back demo-blue">
-                                        Live Demo
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://github.com/nashkenazy/Some-Django-Blog" target="_blank">
-                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                    </a>
-                                    <div class="button button-3d back github-green">
+                                    <div class="button button-3d back github-purple">
                                         Github
                                     </div>
                                 </div>
                             </div>
-                            <div class="button-container button-flip3d-vertical">
+                            <div class="button-container button-flip3d-vertical contacts-margin">
                                 <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://some-coding-blog.herokuapp.com/blog/some-coding-blog-reflections/" target="_blank">
-                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
+                                    <a href="https://linkedin.com/in/nashkenazy" target="_blank">
+                                        <div class="button front big linkedin-blue"><i class="fa fa-linkedin"></i></div>
                                     </a>
-                                    <div class="button button-3d back blog-red">
-                                        Blog Post
+                                    <div class="button button-3d back linkedin-blue">
+                                        Linkedin
                                     </div>
                                 </div>
                             </div>
 
                         </section>
                     </section>
-                    <br />
-                    <div class="wrap">
-                        <img src="images/blog.png">
-                        <div class="overlay">
-                            <button>Fullpage.js and HTML/CSS/JS</button>
-                            <button>Early January 2018</button>
-                        </div>
-                    </div>
 
                 </div>
-                <!-- Second slide, Portfolio Site Project -->
-                <div class="slide">
-                    <section id="flip-3d">
-
-                        <section>
-
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://thomas-le.surge.sh/" target="_blank">
-                                        <div class="button front big demo-blue"><i class="fa fa-external-link"></i></div>
-                                    </a>
-                                    <div class="button button-3d back demo-blue">
-                                        Live Demo
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://github.com/nashkenazy/portfolio-site" target="_blank">
-                                        <div class="button front big github-green"><i class="fa fa-github"></i></div>
-                                    </a>
-                                    <div class="button button-3d back github-green">
-                                        Github
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button-container button-flip3d-vertical">
-                                <div class="flipper flipper-flip3d-vertical">
-                                    <a href="https://some-coding-blog.herokuapp.com/blog/portfolio-site-reflection/" target="_blank">
-                                        <div class="button front big blog-red"><i class="fa fa-book"></i></div>
-                                    </a>
-                                    <div class="button button-3d back blog-red">
-                                        Blog Post
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                    </section>
-                    <br />
-                    <div class="wrap">
-                        <img src="images/portfolio.png">
-                        <div class="overlay">
-                            <button>Fullpage.js and HTML/CSS/JS</button>
-                            <button>Early January 2018</button>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
         </div>
-        <!-- Contact Page Slide -->
-        <div class="section fp-auto-height" id="section2">
-            <div class="myContent wrap">
-                <h2 class="white-font">Contacts</h2>
+        <script type="text/javascript">
+            // Welcome Header Text for animation
 
-                <form class="contact-form" method="POST" action="https://formspree.io/le.thomas.vu@gmail.com">
-                    <input type="text" name="name" required="true" placeholder="Name" />
+            const headerText = "Welcome!";
+            let headerSpanned = '';
 
-                    <input type="email" name="_replyto" required="true" placeholder="Email" />
-
-                    <input type="text" name="subject" required="true" placeholder="Subject" />
-                    <textarea name="message" onkeyup="adjust_textarea(this)" required="true" placeholder="Message"></textarea>
-                    <input class="cursor-pointer" type="submit" value="Send" />
-                    <input type="hidden" name="_next" value="https://thanks-redirect.surge.sh/" />
-                </form>
-                <p class="white-font">Or contact
-                <a class="white-font" href="mailto:le.thomas.vu@gmail.com?Subject=From%20portfolio-site: " target="_top">le.thomas.vu@gmail.com</a>
-                </p>
-                <section id="flip-3d">
-                    <section>
-
-                        <div class="button-container button-flip3d-vertical contacts-margin">
-                            <div class="flipper flipper-flip3d-vertical">
-                                <a href="https://github.com/nashkenazy" target="_blank">
-                                    <div class="button front big github-purple"><i class="fa fa-github"></i></div>
-                                </a>
-                                <div class="button button-3d back github-purple">
-                                    Github
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button-container button-flip3d-vertical contacts-margin">
-                            <div class="flipper flipper-flip3d-vertical">
-                                <a href="https://linkedin.com/in/nashkenazy" target="_blank">
-                                    <div class="button front big linkedin-blue"><i class="fa fa-linkedin"></i></div>
-                                </a>
-                                <div class="button button-3d back linkedin-blue">
-                                    Linkedin
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
-                </section>
-
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        // Welcome Header Text for animation
-
-        const headerText = "Welcome!";
-        let headerSpanned = '';
-
-        for (let i = 0; i < headerText.length; i++) {
-            if (headerText[i] === ' ') {
-                headerSpanned += '&nbsp';
-            } else {
-                headerSpanned += '<span>' + headerText[i] + '</span>';
+            for (let i = 0; i < headerText.length; i++) {
+                if (headerText[i] === ' ') {
+                    headerSpanned += '&nbsp';
+                } else {
+                    headerSpanned += '<span>' + headerText[i] + '</span>';
+                }
             }
-        }
 
-        document.getElementById("welcomeHeader").innerHTML = headerSpanned
+            document.getElementById("welcomeHeader").innerHTML = headerSpanned
 
-        // 'Welcome' Subheader Spanned for animation
+            // 'Welcome' Subheader Spanned for animation
 
-        const subheaderText = "I study full-stack development.";
-        let subheaderSpanned = '';
+            const subheaderText = "I study full-stack development.";
+            let subheaderSpanned = '';
 
-        for (let i = 0; i < subheaderText.length; i++) {
-            if (subheaderText[i] === ' ') {
-                subheaderSpanned += '&nbsp';
-            } else {
-                subheaderSpanned += '<span>' + subheaderText[i] + '</span>';
+            for (let i = 0; i < subheaderText.length; i++) {
+                if (subheaderText[i] === ' ') {
+                    subheaderSpanned += '&nbsp';
+                } else {
+                    subheaderSpanned += '<span>' + subheaderText[i] + '</span>';
+                }
             }
-        }
 
-        document.getElementById("welcomeSubheader").innerHTML = subheaderSpanned
+            document.getElementById("welcomeSubheader").innerHTML = subheaderSpanned
 
-        //auto expand textarea
-        function adjust_textarea(h) {
-            h.style.height = "20px";
-            h.style.height = (h.scrollHeight) + "px";
-        }
-    </script>
+            //auto expand textarea
+            function adjust_textarea(h) {
+                h.style.height = "20px";
+                h.style.height = (h.scrollHeight) + "px";
+            }
+        </script>
 </body>
 
 </html>
